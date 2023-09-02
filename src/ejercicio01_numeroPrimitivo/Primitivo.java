@@ -8,7 +8,14 @@ public class Primitivo {
 
 	public static void main(String[] args) {
 
-		System.out.println("Hola Mundo!!");
+		System.out.println("***Numero Primitivo***");
+		generarNumeroPrimitivo();
+		System.out.println("***Cadena Invertida***");
+		System.out.println(invertirCadena().toUpperCase());
+	}
+
+	public static void generarNumeroPrimitivo() {
+
 		//System.out.println("El numero es::" + generarNumeroAleatorio());
 
 		HashMap<Integer, Integer> map = new HashMap<>();
@@ -29,11 +36,20 @@ public class Primitivo {
 		System.out.println("Numero Ordenados  : "                 + nombreArrayList);
 
 	}
-
 	public static int generarNumeroAleatorio() {
 
 		return (int)(Math.random()*49 + 1);
 
 	}
 
+	public static String invertirCadena() {
+		String CadenaEntrada = "La cadena a invertir";
+		StringBuilder CadenaInvertida = new StringBuilder();
+		
+		for(int i = CadenaEntrada.length() - 1;i >= 0; i--) {
+			CadenaInvertida.append(CadenaEntrada.charAt(i));
+		}
+
+		return CadenaInvertida.toString();
+	}
 }
