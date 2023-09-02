@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
+import ejercicioNotas.GestionMenu;
+
 public class Primitivo {
 
 	public static void main(String[] args) {
@@ -12,6 +14,9 @@ public class Primitivo {
 		generarNumeroPrimitivo();
 		System.out.println("***Cadena Invertida***");
 		System.out.println(invertirCadena().toUpperCase());
+		
+		System.out.println("***Menu Notas***");
+		GestionMenu();
 	}
 
 	public static void generarNumeroPrimitivo() {
@@ -52,4 +57,10 @@ public class Primitivo {
 
 		return CadenaInvertida.toString();
 	}
+
+	public static void GestionMenu() {
+		GestionMenu gestionMenu = new GestionMenu();
+		gestionMenu.mostrar();
+	}
+	
 }
