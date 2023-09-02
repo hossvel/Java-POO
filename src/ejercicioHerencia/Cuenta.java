@@ -7,9 +7,9 @@ public class Cuenta {
 		this.saldo = saldo;
 	}
 
-	public int extraerSaldo(int saldo) {
+	public void extraerSaldo(int saldo) {
 		this.saldo = this.saldo - saldo;
-		return this.saldo;
+		
 	}
 	
 	public void addSaldo(int saldo) {
