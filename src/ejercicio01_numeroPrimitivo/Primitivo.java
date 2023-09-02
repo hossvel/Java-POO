@@ -15,8 +15,8 @@ public class Primitivo {
 		System.out.println("***Cadena Invertida***");
 		System.out.println(invertirCadena().toUpperCase());
 		
-		System.out.println("***Menu Notas***");
-		GestionMenu();
+		//System.out.println("***Menu Notas***");
+		//GestionMenu();
 	}
 
 	public static void generarNumeroPrimitivo() {
