@@ -38,11 +38,11 @@ public class GestionarContacto {
 
 	public Contacto buscarPorNombre(String nombre) {
 		Stream<Contacto> listContactos = map.values().stream();
-		return listContactos.filter(c1 -> c1.getNombre().equals(nombre)).findFirst().get();
+		return listContactos.filter(c1 -> c1.getNombre().equals(nombre)).findFirst().orElse(null);
 
 	}
 
-	public List<String> recuperarNombres(String nombre) {
+	public List<String> recuperarNombres() {
 		Stream<Contacto> listContactos = map.values().stream();
 		return listContactos.map(c-> c.getNombre()).toList();
 
